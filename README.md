@@ -260,7 +260,7 @@ docker compose exec marinara node --require /app/webp-upload-runtime.cjs /tmp/se
 | 변수 | 기본 | 뜻 |
 |---|---|---|
 | `MARINARA_WEBP_UPLOAD_QUALITY` | `95` | WebP 품질 50~100. 100이면 무손실(용량 절감이 크게 줄어듦) |
-| `MARINARA_WEBP_UPLOAD_SCOPE` | `global` | `all`이면 앱이 채팅방 갤러리 API로 올리는 그림도 포함 |
+| `MARINARA_WEBP_UPLOAD_SCOPE` | `global` | `all`이면 서버 안의 앱이 **채팅방 갤러리 업로드 API**로 올리는 그림까지 포함. RP/대화 방에서 엔진이 직접 그리는 삽화는 이 API를 거치지 않으므로 `all`로 켜도 바뀌지 않음(그건 "갤러리 webp 변환" 확장 몫). 현재 그 API로 올리는 앱은 확인된 바 없어 보통은 건드릴 필요 없음 |
 | `MARINARA_WEBP_UPLOAD_ONLY` | (비움) | 예: `gacha-forge` — 호출 스택에 이 문자열이 있을 때만 변환 |
 | `MARINARA_WEBP_UPLOAD_OFF` | (비움) | `1`이면 패치를 끔(파일은 둔 채) |
 
