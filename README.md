@@ -12,7 +12,7 @@
 
 ## 1. 런타임 패치 설치 (도커 서버)
 
-tlsiddl 패치들과 같은 방식입니다. `/root/Marinara-Engine/`에 파일을 두고 `docker-compose.override.yml`에 마운트와 `--require`를 추가합니다.
+`/root/Marinara-Engine/`에 파일을 두고 `docker-compose.override.yml`에 마운트와 `--require`를 추가합니다.
 
 ```yaml
 services:
